@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+<body>
+    <div id="inputs">
+        <h1>Ejercicio de practica</h1>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre">
+        <button type="button" onclick="saludar()" >Save</button>
+    </div>
+    <script>
+        function saludar() {
+            let nombreUsuario = document.getElementById('miNombre').value;
+            
+            if(nombreUsuario === "") {
+                alert('Por favor, ingresa tu nombre antes de guardar.');
+            } else {
+                alert('¡Datos guardados correctamente para ' + nombreUsuario + '!');
+            }
+        }
+    </script>
+</body>
+</html>
